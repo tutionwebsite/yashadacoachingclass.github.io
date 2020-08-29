@@ -151,12 +151,6 @@ input[type="email"] {
     cursor: pointer;
     background-color: #fff;
     color: #000;
-    /*    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 20px;
-    */
 }
 
 .loginForm textarea {
@@ -181,6 +175,34 @@ input[type="email"] {
 
 .loginForm a:hover {
     color: #fff;
+}
+
+
+/*forgot & Reset password css*/
+
+.loginForm p {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.loginForm input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.loginForm input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
 }
 
 
@@ -239,12 +261,6 @@ input[type="email"] {
     cursor: pointer;
     background-color: #fff;
     color: #000;
-    /*    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 20px;
-    */
 }
 
 .signupForm a {
