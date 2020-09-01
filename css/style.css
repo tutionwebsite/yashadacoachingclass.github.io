@@ -151,12 +151,6 @@ input[type="email"] {
     cursor: pointer;
     background-color: #fff;
     color: #000;
-    /*    border: none;
-    outline: none;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 20px;
-    */
 }
 
 .loginForm textarea {
@@ -181,6 +175,34 @@ input[type="email"] {
 
 .loginForm a:hover {
     color: #fff;
+}
+
+
+/*forgot & Reset password css*/
+
+.loginForm p {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+.loginForm input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.loginForm input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
 }
 
 
@@ -214,6 +236,7 @@ h1 {
 
 .signupForm input[type="text"],
 input[type="password"],
+input[type="number"],
 input[type="email"] {
     border: none;
     border-bottom: 1px solid #fff;
@@ -224,7 +247,8 @@ input[type="email"] {
     font-size: 16px;
 }
 
-.signupForm input[type="submit"] {
+.signupForm input[type="button"],
+input[type="submit"] {
     border: none;
     outline: none;
     height: 40px;
@@ -235,16 +259,23 @@ input[type="email"] {
     transition: 0.4s ease;
 }
 
-.signupForm input[type="submit"]:hover {
+.signupForm input[type="button"]:hover,
+input[type="submit"]:hover {
     cursor: pointer;
     background-color: #fff;
     color: #000;
-    /*    border: none;
+}
+
+.signupForm textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
     outline: none;
-    height: 40px;
-    font-size: 18px;
-    border-radius: 20px;
-    */
+    height: 90px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .signupForm a {
@@ -284,5 +315,182 @@ input[type="email"] {
     padding: 0 0 20px;
     text-align: center;
     font-size: 20px;
+    color: #fff;
+}
+
+.aboutUs input[type="button"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+    position: absolute;
+    left: 40%;
+    width: 150px;
+}
+
+.aboutUs input[type="button"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+
+/* Academics css*/
+
+.academics {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+
+/*  Our Speciality css*/
+
+.ourSpeciality {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+}
+
+.ourSpeciality li {
+    display: block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.ourSpeciality h1 {
+    color: #fff;
+    font-size: 50px;
+}
+
+.ourSpeciality p {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+.ourSpeciality img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+/* contact css*/
+
+.contactForm {
+    width: 320px;
+    height: 550px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    transform: translate(-50%, 35%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.contactForm1 {
+    width: 320px;
+    height: 550px;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, 35%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.contactForm input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contactForm input[type="button"],
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.contactForm input[type="button"]:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.contactForm textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 90px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contactForm a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    transition: 0.4s ease;
+}
+
+.contactForm a:hover {
     color: #fff;
 }

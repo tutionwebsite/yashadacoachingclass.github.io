@@ -1,30 +1,59 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Tution Website</title>
+        <title>Contact Us</title>
         <link rel="stylesheet" type="text/css" href="css/style.css"></link>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="js/index.js"></script>
+        <script type="text/javascript">
+            function sendEmail(form) {
+                Email.send({
+                    // here used encrypted smtp credentials via https://smtpjs.com/
+                    SecureToken : "8aef62bc-574b-4422-abdb-32aec1797752",
+                    To : 'yashadaclassesb@gmail.com',
+                    From : "hrushithorat27@gmail.com",
+                    Subject : "Feedback/Enquiry from tution website",
+                    Body :  "Enquiry details  :  " + "<br/>" +
+                            "Enquiry person name  :  " + form.fullName.value + "<br/>"+
+                            "Enquiry person email address  :  " + form.eAddress.value + "<br/>"+
+                            "Enquiry person mobile number  :  " + form.pNumber.value + "<br/>"+
+                            "Enquiry person description  :  " + form.description.value,
+                }).then(
+                    message => alert("Thank you for your feedback/query.")
+                );
+		    }
+	</script>
     <head>
     <body>
         <header>
             <div class="main">
                 <div class="logo">
-                    <img src="icons/tuition_logo.png">
+                    <img src="icons/logo.jpg">
                 </div>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="login.html">Log In</a></li>
-                    <li><a href="signup.html">Sign Up</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="ourSpeciality.html">Our Speciality</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li class="active"><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="loginForm">
+            <div class="contactForm">
                 <h1>Contact Us</h1>
-                <form>
+                <form method="post" name="contact">
                     <input type="text" name="fullName" placeholder="Enter name">
-                    <textarea name="description"placeholder="Enter your feedback"></textarea>
-                    <input type="submit" name="submit" value="Submit">
+					<input type="email" name="eAddress" placeholder="Enter email address">
+                    <input type="number" name="pNumber" maxlength="10" placeholder="Enter phone number">
+                    <textarea name="description" placeholder="Enter your feedback/queries"></textarea>
+                    <!--<input type="submit" name="submit" value="Submit" onclick="sendEmail(this.form)">-->
+                    <a href="contactConfirmation.html"><input type="button" name="submit" value="Submit"></a>
                 </form>
+            </div>
+            <div class="contactForm1">
+                <h1>Getting in touch is easy!</h1>
+                <h3>Find us here!</h3>
+                <h3>Email Address: <u>yashadaclassesb@gmail.com</u></h3>
+                <h3>Telephone/Mobile Number: 1234567890</h3>
             </div>
         </header>
     </body>
