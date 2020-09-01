@@ -339,6 +339,16 @@ input[type="submit"]:hover {
 }
 
 
+/* Academics css*/
+
+.academics {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 25%);
+}
+
+
 /*  Our Speciality css*/
 
 .ourSpeciality {
@@ -377,4 +387,110 @@ input[type="submit"]:hover {
     width: 20px;
     height: auto;
     margin-right: 10px;
+}
+
+
+/* contact css*/
+
+.contactForm {
+    width: 320px;
+    height: 550px;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    transform: translate(-50%, 35%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.contactForm1 {
+    width: 320px;
+    height: 550px;
+    background-color: transparent;
+    color: #fff;
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    transform: translate(-50%, 35%);
+    padding: 70px 30px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+h3 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.contactForm input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactForm input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contactForm input[type="button"],
+input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background-color: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.contactForm input[type="button"]:hover,
+input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+}
+
+.contactForm textarea {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background-color: transparent;
+    outline: none;
+    height: 90px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.contactForm a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+    transition: 0.4s ease;
+}
+
+.contactForm a:hover {
+    color: #fff;
 }
